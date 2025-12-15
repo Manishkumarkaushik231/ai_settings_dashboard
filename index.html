@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI Settings Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🤖 Personal AI Setting Dashboard</h1>
+        <p>Manish Kaushik, Yahan aap apni pasand ki AI settings customize kar sakte hain.</p>
+    </header>
+
+    <main>
+        <section class="settings-panel">
+            <h2>✨ Customization Options</h2>
+            
+            <div class="setting-group">
+                <label for="tone">AI Tone (Baat karne ka Tareeka):</label>
+                <select id="tone">
+                    <option value="teacher">Ek Teacher ki tarah (Aapki pasand)</option>
+                    <option value="friendly" selected>Friendly aur Simple</option>
+                    <option value="professional">Professional</option>
+                </select>
+            </div>
+
+            <div class="setting-group">
+                <label for="language">Preferred Language:</label>
+                <input type="text" id="language" value="Hinglish" placeholder="Jaise Hindi, English, Hinglish">
+            </div>
+
+            <div class="setting-group">
+                <label for="persona">AI Persona (Role):</label>
+                <input type="text" id="persona" value="A professional web developer and coding teacher" placeholder="AI ko kya banna hai">
+            </div>
+
+            <button id="save-btn">⚙️ Settings Save Karen</button>
+            <p id="save-message"></p>
+        </section>
+
+        <section class="info-note">
+            <h3>🔗 Server Connectivity Note</h3>
+            <p><strong>Note:</strong> Is web page ko seedhe (directly) alag-alag AI server se jodna **advanced coding (API)** aur **Server-side** knowledge maangta hai. Lekin, hum yahan settings save karke, unhe copy-paste ke liye ready kar sakte hain!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Dashboard for Manish Kaushik</p>
+    </footer>
+    
+    </body>
+</html>

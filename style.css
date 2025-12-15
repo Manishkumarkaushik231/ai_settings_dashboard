@@ -1,0 +1,109 @@
+/* File: style.css */
+
+/* Global Settings */
+:root {
+    --dark-bg: #1e1e1e; /* Dark background color */
+    --light-text: #ffffff; /* Light text color */
+    --primary-color: #4CAF50; /* Green primary color */
+    --secondary-bg: #2d2d2d; /* Slightly lighter dark background */
+    --border-color: #3a3a3a;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Settings Panel Styling */
+.settings-panel, .info-note {
+    background-color: var(--secondary-bg);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.setting-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a3a3a; /* Input background */
+    color: var(--light-text);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding andar rahe */
+}
+
+/* Button Styling */
+#save-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#save-btn:hover {
+    background-color: #6cff70; /* Lighten on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Response for small screens */
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+    }
+    .settings-panel, .info-note {
+        padding: 20px;
+    }
+}
